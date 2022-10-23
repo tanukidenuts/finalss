@@ -1,0 +1,161 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Helvetica,Calibri,  Playfair;  
+  
+  background-image: url('https://dxjamgtjhgl48.cloudfront.net/uploads/article_inline_image/attachment/5ae737ca3720643882000094/baguio-anchor-photo.jpg');  
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover
+} 
+.form {
+  background: #8FB9A8 ;
+  padding: 1em;
+  height: 100px;
+  
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  justify-content: center;
+  font color: #2D142C;
+}
+ 
+.topbox{
+      font-weight: 500;
+  color:#FEFAD4;
+  opacity: 0.7;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color:#FEFAD4;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+.container {  
+    margin-top: 1px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 70px;  
+    opacity: .9;
+        border-radius: 20px;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color:#9BD7D1 ;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 12px;  
+  margin: 10px 0 10px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: #F1828D;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+.registerbtn {  
+  background-color: #568EA6  ;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 2;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="action_page1.php">
+<div class="form"> 
+    <center><h1 style="color:black ;"> REGISTRATION </h1></center>
+</div>   
+<div class="topbox">  
+    <center>  <h2 style="color: black;">SCHOOL ID REGISTRATION</h2> </center>  
+</div>  
+  <div class="container">  
+    <label> ID Number: </label>
+        <input type="text" name="ID number" maxlength="11" placeholder="00-0000-000" />
+	<label> First Name </label>   
+		<input type="text" name="firstname" placeholder= "Enter your First Name" size="20" required />   
+	<label> Middle Name: </label>   
+		<input type="text" name="middlename" placeholder="Enter your Middle Name" size="20" required />   
+	<label> Last Name: </label>    
+		<input type="text" name="lastname" placeholder="Enter your Last Name" size="15"required />   
+	<label for="email">E-mail</label>  
+		<input type="text" placeholder="Enter your e-mail address" name="email" required>  
+	<label>   
+	Phone :  
+	</label>  
+		<input type="text" name="phone no." placeholder="Your Phone number"  hint="+639" size="14"/>   	
+<div>
+	Address :  
+	<textarea cols="80" rows="5" placeholder="Name of Lot/Block, Street, City,Province" value="address" required></textarea>    
+	<label>   
+	Gender :  
+	</label><br>  
+	<input type="radio" value="Male" name="gender" checked > Male<br>   
+	<input type="radio" value="Female" name="gender"> Female  <br> 
+  <input type="radio" value="Female" name="gender"> Prefer Not to Say   
+</div>  
+
+<div>
+	<label>   
+	Course :  
+	</label>   
+	<select>  
+	<option value="Course">Course</option>  
+	<option value="BSIT">BSIT(Bachelor of Science in Information Technology)-Web Technology</option>  
+	<option value="BSCS">BSIT(Bachelor of Science in Information Technology)-Network Security</option>  
+	<option value="BSDA">BSIT(Bachelor of Science in Information Technology)-Data Analytics</option>
+  <option value="BSDA">BSCS(Bachelor of Science in Computer Science)</option> 
+    
+	</select>  
+</div> 
+<div>
+	Subjects :  
+	<textarea cols="80" rows="5" placeholder="Enter your code, room and schedule" value="address" required></textarea>    
+</div>   
+<div>  
+    <label for="psw">Password</label>  
+        <input type="password" placeholder="*********" name="psw" size="8" required> 
+  
+    <label for="psw-repeat">Confirm Password</label>  
+		<input type="password" placeholder="*********" name="psw-repeat" required> 
+
+    <button type="submit" class="registerbtn">Register</button>   
+</form>  
+</body>  
+</html>
